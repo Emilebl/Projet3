@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 40px;
 }
 .menugrid .menu_wrapper {
   border: 2px solid black;
@@ -34,12 +35,37 @@ header {
   text-align: center;
 }
 
-.btn_next {
+.next {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.next .btn_next {
   background-color: #569c87;
   color: #fcca46;
   font-family: sans-serif;
   width: 200px;
   height: 40px;
+  border-radius: 3px;
+  text-align: center;
+  animation: wiggle 3s infinite;
+}
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  3% {
+    transform: rotate(-2deg);
+  }
+  4% {
+    transform: rotate(2deg);
+  }
+  5% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 footer {
