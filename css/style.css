@@ -1,5 +1,53 @@
-body {
-  background: #000;
+.menugrid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.menugrid .menu_wrapper {
+  border: 2px solid black;
+  width: 300px;
+  height: 450px;
+  overflow: hidden;
+  /* hide the overflow */
+}
+.menugrid .menu_wrapper .menu {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  background: rgba(255, 192, 203, 0.5);
+}
+.menugrid .menu_wrapper .menu:hover {
+  transform: scale(1.2);
+  background: pink;
+}
+
+header {
+  background-color: #569c87;
+  color: #fcca46;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.btn_next {
+  background-color: #569c87;
+  color: #fcca46;
+  font-family: sans-serif;
+  width: 200px;
+  height: 40px;
+}
+
+footer {
+  background-color: #569c87;
+  color: #fcca46;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
