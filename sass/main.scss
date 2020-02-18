@@ -1,39 +1,77 @@
+// Variables
+$primarycolor:#569C87;
+$secondarycolor:#FCCA46;
+$colormenu1: pink;
+$colormenu2: blue;
+$colormenu3: skyblue;
+$colormenu4: palegreen;
+
+// Mixins
 @mixin maintheme {
-    background-color: rgba($color: #569C87, $alpha: 1.0);
-    color: rgba($color: #FCCA46, $alpha: 1.0);
+    background-color: rgba($color: $primarycolor, $alpha: 1.0);
+    color: rgba($color: $secondarycolor, $alpha: 1.0);
     font-family: sans-serif;
+}
+
+@mixin menu ($color){
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    background: rgba($color: $color, $alpha: 0.1);
+    &:hover{
+        transform: scale(1.20);
+        background: rgba($color: $color, $alpha: 1.0);
+    }
 }
 
 *{margin: 0; padding: 0;}
 
 .menugrid{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-content: space-around;
     flex-wrap: wrap;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
+    height: 1000px;
+    padding: 20px;
+    @media (max-width: 599px) {
+        height: 500px;
+    }
     .menu_wrapper{
-        border: 2px solid black;
-        width: 300px;
+        box-shadow: 0px 0px 10px 5px rgba($color: #000000, $alpha: 0.2);
+        width: 35%;
         height: 450px;
-        overflow: hidden;      /* hide the overflow */
-        .menu{
-            display: flex;
-            height: 100%;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            transition: all 0.5s ease;
-            background: rgba($color: pink, $alpha: 0.5);
-            &:hover{
-                transform: scale(1.20);
-                background: rgba($color: pink, $alpha: 1.0);
-            }
+        margin-bottom: 30px;
+        overflow: hidden;
+        @media (max-width: 599px) {
+            width: 40%;
+            height: 250px;
         }
+        
     }  
 }
+
+.menu--1{
+    @include menu($colormenu1);
+}
+
+.menu--2{
+    @include menu($colormenu2);
+}
+
+.menu--3{
+    @include menu($colormenu3);
+}
+
+.menu--4{
+    @include menu($colormenu4);
+}
+
+
+
 
 header {
     @include maintheme;
