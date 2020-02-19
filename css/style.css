@@ -1,5 +1,12 @@
 @charset "UTF-8";
 @font-face {
+  font-family: "montserratregular";
+  src: url("fonts/montserrat-regular-webfont.eot");
+  src: url("fonts/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/montserrat-regular-webfont.woff2") format("woff2"), url("fonts/montserrat-regular-webfont.woff") format("woff"), url("fonts/montserrat-regular-webfont.ttf") format("truetype"), url("fonts/montserrat-regular-webfont.svg#montserratregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "alex_brushregular";
   src: url("fonts/alexbrush-regular-webfont.eot");
   src: url("fonts/alexbrush-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/alexbrush-regular-webfont.woff2") format("woff2"), url("fonts/alexbrush-regular-webfont.woff") format("woff"), url("fonts/alexbrush-regular-webfont.ttf") format("truetype"), url("fonts/alexbrush-regular-webfont.svg#alex_brushregular") format("svg");
@@ -39,13 +46,71 @@
   padding: 0;
 }
 
+body {
+  font-family: "montserratregular";
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+@media (max-width: 1200px) {
+  h2 {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 599px) {
+  h2 {
+    font-size: 1em;
+  }
+}
+
+h3 {
+  font-size: 3em;
+  font-weight: lighter;
+}
+@media (max-width: 1200px) {
+  h3 {
+    font-size: 2.25em;
+  }
+}
+@media (max-width: 599px) {
+  h3 {
+    font-size: 1.5em;
+  }
+}
+
+header {
+  background-color: #569c87;
+  color: #fcca46;
+  font-family: "montserratregular";
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+@media (max-width: 599px) {
+  header {
+    font-size: 1em;
+  }
+}
+header img {
+  height: 50px;
+  width: auto;
+}
+
 .menugrid {
   display: flex;
   justify-content: space-around;
   align-content: space-around;
   flex-wrap: wrap;
-  height: 1000px;
+  height: 100%;
   padding: 20px;
+  margin: auto;
 }
 @media (max-width: 599px) {
   .menugrid {
@@ -54,96 +119,123 @@
 }
 .menugrid .menu_wrapper {
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
-  width: 35%;
-  height: 450px;
+  width: 40%;
+  height: 600px;
   margin-bottom: 30px;
   overflow: hidden;
 }
+@media (max-width: 850px) {
+  .menugrid .menu_wrapper {
+    height: 400px;
+  }
+}
 @media (max-width: 599px) {
   .menugrid .menu_wrapper {
-    width: 40%;
     height: 250px;
   }
 }
 
+.menutxt {
+  width: 80%;
+}
+
 .menu--1 {
-  display: flex;
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   cursor: pointer;
-  transition: all 0.5s ease;
-  background: rgba(255, 192, 203, 0.1);
-  font-family: "kalamregular";
+  transition: all 0.6s ease;
+  background: #ffe2e7;
   color: #310015;
+  font-family: "kalamregular";
 }
 .menu--1:hover {
   transform: scale(1.2);
-  background: pink;
+  color: rgba(49, 0, 21, 0.4);
+}
+.menu--1 img {
+  width: 6em;
+}
+@media (max-width: 1200px) {
+  .menu--1 img {
+    width: 4.5em;
+  }
+}
+@media (max-width: 599px) {
+  .menu--1 img {
+    width: 3em;
+  }
 }
 
 .menu--2 {
-  display: flex;
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   cursor: pointer;
-  transition: all 0.5s ease;
-  background: rgba(0, 0, 255, 0.1);
+  transition: all 0.6s ease;
+  background: #e6e6ff;
+  color: #00006b;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .menu--2:hover {
   transform: scale(1.2);
-  background: blue;
+  color: rgba(0, 0, 107, 0.4);
 }
 
 .menu--3 {
-  display: flex;
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   cursor: pointer;
-  transition: all 0.5s ease;
-  background: rgba(135, 206, 235, 0.1);
-  font-family: "alex_brushregular";
+  transition: all 0.6s ease;
+  background: #d9eef7;
+  color: #007eaf;
 }
 .menu--3:hover {
   transform: scale(1.2);
-  background: skyblue;
+  color: rgba(0, 126, 175, 0.4);
+}
+.menu--3 h2 {
+  font-family: "alex_brushregular";
+}
+.menu--3 h3 {
+  font-family: "kalamregular";
 }
 
 .menu--4 {
-  display: flex;
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   cursor: pointer;
-  transition: all 0.5s ease;
-  background: rgba(152, 251, 152, 0.1);
-  font-family: "kaushan_scriptregular";
-  color: green;
+  transition: all 0.6s ease;
+  background: #e8fde8;
+  color: #0eb30e;
 }
 .menu--4:hover {
   transform: scale(1.2);
-  background: palegreen;
+  color: rgba(14, 179, 14, 0.4);
 }
-
-header {
-  background-color: #569c87;
-  color: #fcca46;
-  font-family: sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  margin-bottom: 30px;
+.menu--4 h2 {
+  font-family: "kaushan_scriptregular";
+}
+.menu--4 h3 {
+  font-family: "kalamregular";
 }
 
 .next {
@@ -155,13 +247,33 @@ header {
 .next .btn_next {
   background-color: #569c87;
   color: #fcca46;
-  font-family: sans-serif;
-  width: 200px;
+  font-family: "montserratregular";
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  width: 330px;
   height: 40px;
-  border-radius: 3px;
+  border-radius: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+}
+@media (max-width: 599px) {
+  .next .btn_next {
+    font-size: 1em;
+  }
+}
+.next .btn_next__txt {
+  padding-left: 15%;
+}
+@media (max-width: 599px) {
+  .next .btn_next__txt {
+    padding-left: 20%;
+  }
+}
+@media (max-width: 599px) {
+  .next .btn_next {
+    width: 250px;
+  }
 }
 .next .btn_next:after {
   overflow: hidden;
@@ -187,7 +299,9 @@ header {
 footer {
   background-color: #569c87;
   color: #fcca46;
-  font-family: sans-serif;
+  font-family: "montserratregular";
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
   position: fixed;
   left: 0px;
   bottom: 0px;
@@ -196,6 +310,11 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 599px) {
+  footer {
+    font-size: 1em;
+  }
 }
 footer .btn_wiggle {
   margin: 20px;
