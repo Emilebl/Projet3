@@ -49,6 +49,25 @@ body {
   font-family: "montserratregular";
 }
 
+h2 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+h4, h5 {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+h3, h4, h5 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
 header {
   background-color: #579c87;
   color: #fcca46;
@@ -60,7 +79,7 @@ header {
   align-items: center;
   height: 70px;
   padding-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 @media (max-width: 599px) {
   header {
@@ -70,6 +89,40 @@ header {
 header img {
   height: 50px;
   width: auto;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.menu .menu_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  width: 80%;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+  background-color: #FCDFDB;
+  color: #3D1319;
+  font-size: 1.5em;
+  font-family: "kalamregular";
+}
+.menu .menu_wrapper img {
+  width: 6em;
+}
+.menu .menu_wrapper .liste {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.menu .menu_wrapper .liste .liste_plats {
+  font-weight: lighter;
 }
 
 footer {

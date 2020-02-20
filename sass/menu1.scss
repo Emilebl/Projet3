@@ -75,14 +75,28 @@
 // Variables
 $primarycolor:#579C87;
 $secondarycolor:#FCCA46;
+
 $colormenu1: #FCDFDB;
 $colormenutext1: #3D1319;
+
 $colormenu2: #FFF5FE;
 $colormenutext2:#C67412;
+
 $colormenu3: #F9F9F9;
 $colormenutext3: #187BF4;
+
 $colormenu4: #FDFFFD;
 $colormenutext4: #59AA48;
+
+$fontmenu1a:'kalamregular';
+
+$fontmenu2a:'Georgia, "Times New Roman", Times, serif';
+
+$fontmenu3a:'kalamlight';
+$fontmenu3b:'alex_brushregular';
+
+$fontmenu4a:'kalamlight';
+$fontmenu4b:'kaushan_scriptregular';
 
 // Mixins
 @mixin maintheme {
@@ -96,6 +110,40 @@ $colormenutext4: #59AA48;
     } 
 }
 
+@mixin menulayout ($colorbkg, $colortxt, $font) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 100px;
+    .menu_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        padding-top: 7%;
+        padding-bottom: 7%;
+        width: 80%;
+        box-shadow: 0px 0px 10px 5px rgba($color: #000000, $alpha: 0.2);
+        background-color: $colorbkg;
+        color: $colortxt;
+        font-size: 1.5em;
+        font-family: $font;
+        img {
+            width: 6em;
+        }
+        .liste {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            .liste_plats {
+                font-weight: lighter;
+            }
+        }
+    }
+}
+
 // General
 
 *{margin: 0; padding: 0;}
@@ -103,6 +151,27 @@ $colormenutext4: #59AA48;
 body {
     font-family: 'montserratregular';
 }
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+h4, h5{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+h3, h4, h5{
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
 
 // Header
 
@@ -113,12 +182,20 @@ header {
     align-items: center;
     height: 70px;
     padding-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     & img{
         height: 50px;
         width: auto;
     }
 }
+
+// Menu
+
+.menu {
+    @include menulayout ($colormenu1, $colormenutext1, $fontmenu1a)
+}
+
+
 
 // Footer
 

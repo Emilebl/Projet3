@@ -95,7 +95,7 @@ header {
   align-items: center;
   height: 70px;
   padding-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 @media (max-width: 599px) {
   header {
