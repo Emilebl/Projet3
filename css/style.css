@@ -50,6 +50,10 @@ body {
   font-family: "montserratregular";
 }
 
+a {
+  text-decoration: none;
+}
+
 h2 {
   font-size: 2em;
   margin-bottom: 20px;
@@ -81,7 +85,7 @@ h3 {
 }
 
 header {
-  background-color: #569c87;
+  background-color: #579c87;
   color: #fcca46;
   font-family: "montserratregular";
   font-size: 1.5em;
@@ -111,11 +115,6 @@ header img {
   height: 100%;
   padding: 20px;
   margin: auto;
-}
-@media (max-width: 599px) {
-  .menugrid {
-    height: 500px;
-  }
 }
 .menugrid .menu_wrapper {
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
@@ -147,15 +146,18 @@ header img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  cursor: pointer;
-  transition: all 0.6s ease;
-  background: #ffe2e7;
-  color: #310015;
+  background: #fcdfdb;
+  color: #3d1319;
   font-family: "kalamregular";
 }
-.menu--1:hover {
-  transform: scale(1.2);
-  color: rgba(49, 0, 21, 0.4);
+.menu--1 .menutxt {
+  cursor: pointer;
+  transition: all 0.6s ease;
+  opacity: 1;
+}
+.menu--1 .menutxt:hover {
+  transform: scale(1.25);
+  opacity: 0.4;
 }
 .menu--1 img {
   width: 6em;
@@ -179,15 +181,23 @@ header img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  cursor: pointer;
-  transition: all 0.6s ease;
-  background: #e6e6ff;
-  color: #00006b;
+  background: #fff5fe;
+  color: #c67412;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-.menu--2:hover {
-  transform: scale(1.2);
-  color: rgba(0, 0, 107, 0.4);
+.menu--2 .menutxt {
+  cursor: pointer;
+  transition: all 0.6s ease;
+  opacity: 1;
+}
+.menu--2 .menutxt:hover {
+  transform: scale(1.25);
+  opacity: 0.4;
+}
+.menu--2 h2 {
+  background: linear-gradient(to right, #C67412 0%, #A165CB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu--3 {
@@ -198,16 +208,22 @@ header img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background: #f9f9f9;
+  color: #187bf4;
+}
+.menu--3 .menutxt {
   cursor: pointer;
   transition: all 0.6s ease;
-  background: #d9eef7;
-  color: #007eaf;
+  opacity: 1;
 }
-.menu--3:hover {
-  transform: scale(1.2);
-  color: rgba(0, 126, 175, 0.4);
+.menu--3 .menutxt:hover {
+  transform: scale(1.25);
+  opacity: 0.4;
 }
 .menu--3 h2 {
+  background: linear-gradient(to right, #0B2FDE 0%, #187BF4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: "alex_brushregular";
 }
 .menu--3 h3 {
@@ -222,16 +238,22 @@ header img {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background: #fdfffd;
+  color: #59aa48;
+}
+.menu--4 .menutxt {
   cursor: pointer;
   transition: all 0.6s ease;
-  background: #e8fde8;
-  color: #0eb30e;
+  opacity: 1;
 }
-.menu--4:hover {
-  transform: scale(1.2);
-  color: rgba(14, 179, 14, 0.4);
+.menu--4 .menutxt:hover {
+  transform: scale(1.25);
+  opacity: 0.4;
 }
 .menu--4 h2 {
+  background: linear-gradient(to right, #59AA48 0%, #A5E970 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: "kaushan_scriptregular";
 }
 .menu--4 h3 {
@@ -245,7 +267,7 @@ header img {
   margin-bottom: 40px;
 }
 .next .btn_next {
-  background-color: #569c87;
+  background-color: #579c87;
   color: #fcca46;
   font-family: "montserratregular";
   font-size: 1.5em;
@@ -297,7 +319,7 @@ header img {
 }
 
 footer {
-  background-color: #569c87;
+  background-color: #579c87;
   color: #fcca46;
   font-family: "montserratregular";
   font-size: 1.5em;
