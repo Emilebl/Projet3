@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch ./sass/main.scss:./css/style.css ./sass/menu1.scss:./css/stylemenu1.css"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css ./sass/noteenchantee.scss:./css/stylenoteenchantee.css ./sass/palettegout.scss:./css/stylepalettegout.css"
   },
   "author": "",
   "license": "ISC"

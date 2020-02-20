@@ -1,0 +1,59 @@
+// Fonts
+@import "./base/fonts";
+
+// Variables
+@import "./utils/variables";
+
+// Mixins
+@import "./utils/mixins";
+
+// General
+
+*{margin: 0; padding: 0;}
+
+body {
+    font-family: 'montserratregular';
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+h4, h5{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+h3, h4, h5{
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+
+// Header
+
+header {
+    @include maintheme;
+    @include header;
+}
+
+// Menu
+
+.menu {
+    @include menulayout ($colormenu1, $colormenutext1, $fontmenu1a)
+}
+
+
+
+// Footer
+
+footer {
+    @include maintheme;
+    @include footer;
+}
