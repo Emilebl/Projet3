@@ -180,6 +180,10 @@ footer .btn_wiggle {
   cursor: pointer;
   animation: wiggle 3s infinite;
 }
+footer .btn_wiggle a {
+  color: #FCCA46;
+  text-decoration: none;
+}
 @keyframes wiggle {
   0% {
     transform: rotate(0deg);

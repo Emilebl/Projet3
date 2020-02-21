@@ -35,6 +35,10 @@
         margin: 20px;
         cursor: pointer;
         animation: wiggle 3s infinite;
+        & a {
+            color: $secondarycolor;
+            text-decoration: none;
+        }
     }
     @keyframes wiggle {
         0%{transform: rotate(0deg);}
