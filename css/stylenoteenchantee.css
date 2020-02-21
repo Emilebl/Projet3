@@ -55,9 +55,32 @@ h2 {
   font-weight: bolder;
 }
 
-h4, h5 {
+h4 {
+  font-size: 1.5em;
   padding-top: 3%;
   padding-bottom: 3%;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.underline {
+  position: relative;
+}
+.underline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #3D1319;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+.underline:hover:before {
+  visibility: visible;
+  width: 100%;
 }
 
 h3, h4, h5 {
