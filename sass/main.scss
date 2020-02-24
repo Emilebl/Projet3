@@ -17,6 +17,7 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 h2 {
@@ -156,20 +157,20 @@ header {
         overflow: hidden;
         display: inline-block;
         vertical-align: bottom;
-        -webkit-animation: ellipsis steps(4,end) 900ms infinite;      
-        animation: ellipsis steps(4,end) 900ms infinite;
+        -webkit-animation: ellipsis steps(4,end) 1600ms infinite;      
+        animation: ellipsis steps(4,end) 1600ms infinite;
         content: "\2026"; /* ascii code for the ellipsis character */
         width: 0px;
       }
       @keyframes ellipsis {
         to {
-          width: 1.25em;    
+          width: 20px;    
         }
       }
     }
     @-webkit-keyframes ellipsis {
         to {
-          width: 1.25em;    
+          width: 20px;    
         }
     }
 }

@@ -140,7 +140,7 @@ header img {
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
   background-color: #F9F9F9;
   color: black;
-  font-size: 1.5em;
+  font-size: 1.8vw;
   font-family: "kalamlight";
 }
 .menu .menu_wrapper img {
@@ -153,6 +153,9 @@ header img {
 }
 .menu .menu_wrapper .liste .liste_plats {
   font-weight: lighter;
+}
+.menu .menu_wrapper .liste .liste_prix {
+  font-weight: bold;
 }
 
 footer {
