@@ -42,22 +42,7 @@ h4 {
 }
 
 .underline {
-    position: relative;
-    &:before {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 3px;
-        bottom: 0;
-        left: 0;
-        background-color: black;
-        visibility: hidden;
-        transition: all 0.4s ease-in-out;
-      }
-    &:hover:before {
-        visibility: visible;
-        width: 100%;
-    }
+    @include underline (black);
 }
 
 h3, h4{

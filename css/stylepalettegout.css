@@ -96,6 +96,16 @@ h4 {
   visibility: hidden;
   transition: all 0.4s ease-in-out;
 }
+@media (max-width: 1200px) {
+  .underline:before {
+    height: 2px;
+  }
+}
+@media (max-width: 599px) {
+  .underline:before {
+    height: 1px;
+  }
+}
 .underline:hover:before {
   visibility: visible;
   width: 100%;
@@ -166,6 +176,7 @@ header img {
 }
 .menu .menu_wrapper .liste .liste_prix {
   font-weight: bold;
+  text-align: right;
 }
 
 footer {

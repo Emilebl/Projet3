@@ -99,7 +99,7 @@ header {
     @include menu($colormenu2, $colormenutext2);
     font-family: Georgia, 'Times New Roman', Times, serif;
     & h2 {
-        background: linear-gradient(to right, $colormenutext2 0%, #A165CB 100%);
+        background: linear-gradient(to right, $colormenutext2 0%, $colormenutext2c 100%);
 	    -webkit-background-clip: text;
 	    -webkit-text-fill-color: transparent;
     }

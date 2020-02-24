@@ -82,23 +82,110 @@ h4 {
   width: 80%;
 }
 
-.underline {
+.underline--1 {
   position: relative;
+  color: #C67412;
 }
-.underline:before {
+.underline--1:before {
   content: "";
   position: absolute;
   width: 0;
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: black;
+  background-color: #C67412;
   visibility: hidden;
   transition: all 0.4s ease-in-out;
 }
-.underline:hover:before {
+@media (max-width: 1200px) {
+  .underline--1:before {
+    height: 2px;
+  }
+}
+@media (max-width: 599px) {
+  .underline--1:before {
+    height: 1px;
+  }
+}
+.underline--1:hover:before {
   visibility: visible;
   width: 100%;
+}
+
+.underline--2 {
+  position: relative;
+  color: #A56799;
+}
+.underline--2:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #A56799;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+@media (max-width: 1200px) {
+  .underline--2:before {
+    height: 2px;
+  }
+}
+@media (max-width: 599px) {
+  .underline--2:before {
+    height: 1px;
+  }
+}
+.underline--2:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.underline--3 {
+  position: relative;
+  color: #6E4CCC;
+}
+.underline--3:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #6E4CCC;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+@media (max-width: 1200px) {
+  .underline--3:before {
+    height: 2px;
+  }
+}
+@media (max-width: 599px) {
+  .underline--3:before {
+    height: 1px;
+  }
+}
+.underline--3:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.liste--1 {
+  color: #C67412;
+}
+
+.liste--2 {
+  color: #A56799;
+}
+
+.liste--3 {
+  color: #6E4CCC;
+}
+
+.liste {
+  line-height: 1.5em;
 }
 
 h3, h4 {
@@ -166,6 +253,7 @@ header img {
 }
 .menu .menu_wrapper .liste .liste_prix {
   font-weight: bold;
+  text-align: right;
 }
 
 footer {

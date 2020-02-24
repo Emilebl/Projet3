@@ -83,10 +83,38 @@
             }
             .liste_prix {
                 font-weight: bold;
+                text-align: right;
             }
         }
     }
 }
+
+@mixin underline ($color) {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: $color;
+        visibility: hidden;
+        transition: all 0.4s ease-in-out;
+        @media (max-width: 1200px) {
+            height: 2px;
+        }
+        @media (max-width: 599px) {
+            height: 1px;
+        }
+    }
+    &:hover:before {
+        visibility: visible;
+        width: 100%;
+    }
+    
+}
+
 
 @mixin menu ($colorbkg, $colortxt){
     height: 100%;

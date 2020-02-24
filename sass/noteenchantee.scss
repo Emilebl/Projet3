@@ -53,22 +53,7 @@ h5 {
 }
 
 .underline {
-    position: relative;
-    &:before {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 3px;
-        bottom: 0;
-        left: 0;
-        background-color: $colormenutext1;
-        visibility: hidden;
-        transition: all 0.4s ease-in-out;
-      }
-    &:hover:before {
-        visibility: visible;
-        width: 100%;
-    }
+    @include underline ($colormenutext1);
 }
 
 h3, h4, h5 {
