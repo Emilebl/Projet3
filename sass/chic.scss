@@ -22,10 +22,14 @@ h2 {
 }
 
 h3 {
+    width: 80%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: $colormenutext2;
     font-size: 2.5em;
     margin-bottom: 6%;
+    background: linear-gradient(to right, $colormenutext2 0%, #A165CB 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 h4 {

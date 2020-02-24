@@ -41,6 +41,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "yellowtailregular";
+  src: url("fonts/yellowtail-regular-webfont.eot");
+  src: url("fonts/yellowtail-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/yellowtail-regular-webfont.woff2") format("woff2"), url("fonts/yellowtail-regular-webfont.woff") format("woff"), url("fonts/yellowtail-regular-webfont.ttf") format("truetype"), url("fonts/yellowtail-regular-webfont.svg#yellowtailregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -90,7 +97,6 @@ header {
   color: #fcca46;
   font-family: "montserratregular";
   font-size: 1.5em;
-  letter-spacing: 0.1em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,7 +155,7 @@ header img {
   text-align: center;
   background: #fcdfdb;
   color: #3d1319;
-  font-family: "kalamregular";
+  font-family: "yellowtailregular";
 }
 .menu--1 .menutxt {
   cursor: pointer;
@@ -159,6 +165,9 @@ header img {
 .menu--1 .menutxt:hover {
   transform: scale(1.25);
   opacity: 0.4;
+}
+.menu--1 h3 {
+  font-family: "kalamregular";
 }
 .menu--1 img {
   width: 6em;
@@ -272,7 +281,6 @@ header img {
   color: #fcca46;
   font-family: "montserratregular";
   font-size: 1.5em;
-  letter-spacing: 0.1em;
   width: 330px;
   height: 40px;
   border-radius: 10px;
@@ -324,7 +332,6 @@ footer {
   color: #fcca46;
   font-family: "montserratregular";
   font-size: 1.5em;
-  letter-spacing: 0.1em;
   position: fixed;
   left: 0px;
   bottom: 0px;

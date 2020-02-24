@@ -80,7 +80,10 @@ header {
 
 .menu--1{
     @include menu($colormenu1, $colormenutext1);
-    font-family: 'kalamregular';
+    font-family: 'yellowtailregular';
+    & h3 { 
+        font-family: 'kalamregular';
+    }  
     & img {
         width: 6em;
         @media (max-width: 1200px) {

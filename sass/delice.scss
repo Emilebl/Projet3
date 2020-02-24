@@ -22,10 +22,14 @@ h2 {
 }
 
 h3 {
+    width: 80%;
     font-family: 'alex_brushregular';
     color: $colormenutext3;
     font-size: 2.5em;
     margin-bottom: 6%;
+    background: linear-gradient(to right, #0B2FDE 0%, $colormenutext3 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 h4 {
