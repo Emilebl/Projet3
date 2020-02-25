@@ -12,14 +12,30 @@
 *{margin: 0; padding: 0;}
 
 body {
-    font-family: 'montserratregular';
+    @include body 
 }
 
-h2 {
-    text-align: center;
-    font-size: 2em;
-    font-weight: bolder;
+// Header
+
+header {
+    @include maintheme;
+    @include header;
 }
+
+// Menu
+
+.menu {
+    @include menulayout ($colormenu1, $colormenutext1, $fontmenu1a)
+}
+
+// Footer
+
+footer {
+    @include maintheme;
+    @include footer;
+}
+
+// Specific to the page
 
 h3{
     width: 80%;
@@ -59,32 +75,4 @@ h5 {
 
 h3, h4, h5 {
     text-align: center;
-}
-
-ul{
-    list-style-type: none;
-}
-
-
-
-// Header
-
-header {
-    @include maintheme;
-    @include header;
-}
-
-// Menu
-
-.menu {
-    @include menulayout ($colormenu1, $colormenutext1, $fontmenu1a)
-}
-
-
-
-// Footer
-
-footer {
-    @include maintheme;
-    @include footer;
 }
