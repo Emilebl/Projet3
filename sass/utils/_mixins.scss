@@ -2,9 +2,9 @@
     background-color: rgba($color: $primarycolor, $alpha: 1.0);
     color: rgba($color: $secondarycolor, $alpha: 1.0);
     font-family: 'montserratregular';
-    font-size: 1.5em;
+    font-size: 2vw;
     @media (max-width: 599px) {
-        font-size: 1em;
+        font-size: 3vw;
     } 
 }
 
@@ -33,7 +33,7 @@
     .btn_wiggle{
         margin: 20px;
         cursor: pointer;
-        animation: wiggle 3s infinite;
+        animation: wiggle 2s infinite;
         & a {
             color: $secondarycolor;
             text-decoration: none;
@@ -41,9 +41,9 @@
     }
     @keyframes wiggle {
         0%{transform: rotate(0deg);}
-        3%{transform: rotate(-4deg);}
-        4%{transform: rotate(4deg);}
-        5%{transform: rotate(0deg);}
+        6%{transform: rotate(-5deg);}
+        8%{transform: rotate(5deg);}
+        10%{transform: rotate(0deg);}
         100%{transform: rotate(0deg);}
     }
 }
@@ -67,6 +67,7 @@
         background-color: $colorbkg;
         color: $colortxt;
         font-size: 1.8vw;
+        line-height: 2em;
         font-family: $font;
         // @media (max-width: 599px) {
         //     font-size: 2vw;
@@ -78,9 +79,7 @@
             display: flex;
             justify-content: space-between;
             width: 80%;
-            .liste_plats {
-                font-weight: lighter;
-            }
+            margin-bottom: 8%;
             .liste_prix {
                 font-weight: bold;
                 text-align: right;

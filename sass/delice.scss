@@ -23,10 +23,11 @@ h2 {
 
 h3 {
     width: 80%;
+    height: 2.5em;
+    padding: 1%;
     font-family: 'alex_brushregular';
     color: $colormenutext3;
     font-size: 2.5em;
-    margin-bottom: 6%;
     background: linear-gradient(to right, #0B2FDE 0%, $colormenutext3 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -34,11 +35,10 @@ h3 {
 
 h4 {
     font-size: 1.5em;
-    padding-top: 3%;
     padding-bottom: 3%;
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
 }
 
 .underline {

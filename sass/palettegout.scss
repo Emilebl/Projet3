@@ -23,10 +23,11 @@ h2 {
 
 h3 {
     width: 80%;
+    height: 2.5em;
     font-family: 'kaushan_scriptregular';
     color: $colormenutext4;
     font-size: 2.5em;
-    margin-bottom: 6%;
+    font-weight: lighter;
     background: linear-gradient(to right, $colormenutext4 0%, #A5E970 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -34,11 +35,10 @@ h3 {
 
 h4 {
     font-size: 1.5em;
-    padding-top: 3%;
     padding-bottom: 3%;
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
 }
 .underline {
     @include underline (black);
