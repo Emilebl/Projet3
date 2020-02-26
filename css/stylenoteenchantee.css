@@ -69,6 +69,32 @@ body ul {
   list-style-type: none;
 }
 
+h3, h4, h5 {
+  text-align: center;
+}
+
+h3 {
+  width: 80%;
+  height: 2.5em;
+  font-family: "Yellowtailregular";
+  font-size: 2.5em;
+}
+
+h4 {
+  font-size: 1.5em;
+  padding-bottom: 3%;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+h5 {
+  width: 80%;
+  font-family: "Yellowtailregular";
+  font-size: 3vw;
+  margin-top: 5%;
+}
+
 header {
   background-color: #579c87;
   color: #fcca46;
@@ -128,6 +154,35 @@ header img {
   text-align: right;
 }
 
+.underline {
+  position: relative;
+}
+.underline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #3D1319;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+@media (max-width: 1200px) {
+  .underline:before {
+    height: 2px;
+  }
+}
+@media (max-width: 599px) {
+  .underline:before {
+    height: 1px;
+  }
+}
+.underline:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
 footer {
   background-color: #579c87;
   color: #fcca46;
@@ -174,68 +229,16 @@ footer .btn_wiggle a {
   }
 }
 
-h3 {
-  width: 80%;
-  height: 2.5em;
-  font-family: "Yellowtailregular";
-  font-size: 2.5em;
-}
-
-h4 {
-  font-size: 1.5em;
-  padding-bottom: 3%;
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-}
-
-h5 {
-  width: 80%;
-  font-family: "Yellowtailregular";
-  font-size: 3vw;
-  margin-top: 5%;
-}
-
 .img--top {
   height: 4em;
   margin-bottom: 3%;
 }
 
 .img--bottom {
-  height: 1em;
-}
-
-.underline {
-  position: relative;
-}
-.underline:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 3px;
-  bottom: 0;
-  left: 0;
-  background-color: #3D1319;
-  visibility: hidden;
-  transition: all 0.4s ease-in-out;
-}
-@media (max-width: 1200px) {
-  .underline:before {
-    height: 2px;
-  }
-}
-@media (max-width: 599px) {
-  .underline:before {
-    height: 1px;
-  }
-}
-.underline:hover:before {
-  visibility: visible;
-  width: 100%;
-}
-
-h3, h4, h5 {
-  text-align: center;
+  height: 1.5em;
+  margin-right: -10%;
+  margin-left: -10%;
+  margin-bottom: -2%;
 }
 
 /*# sourceMappingURL=stylenoteenchantee.css.map */

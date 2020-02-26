@@ -69,6 +69,30 @@ body ul {
   list-style-type: none;
 }
 
+h3, h4 {
+  text-align: center;
+}
+
+h3 {
+  width: 80%;
+  height: 2.5em;
+  font-family: "kaushan_scriptregular";
+  color: #59AA48;
+  font-size: 2.5em;
+  font-weight: lighter;
+  background: linear-gradient(to right, #59AA48 0%, #A5E970 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h4 {
+  font-size: 1.5em;
+  padding-bottom: 3%;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
 header {
   background-color: #579c87;
   color: #fcca46;
@@ -128,6 +152,35 @@ header img {
   text-align: right;
 }
 
+.underline {
+  position: relative;
+}
+.underline:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out;
+}
+@media (max-width: 1200px) {
+  .underline:before {
+    height: 2px;
+  }
+}
+@media (max-width: 599px) {
+  .underline:before {
+    height: 1px;
+  }
+}
+.underline:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
 footer {
   background-color: #579c87;
   color: #fcca46;
@@ -172,59 +225,6 @@ footer .btn_wiggle a {
   100% {
     transform: rotate(0deg);
   }
-}
-
-h3 {
-  width: 80%;
-  height: 2.5em;
-  font-family: "kaushan_scriptregular";
-  color: #59AA48;
-  font-size: 2.5em;
-  font-weight: lighter;
-  background: linear-gradient(to right, #59AA48 0%, #A5E970 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-h4 {
-  font-size: 1.5em;
-  padding-bottom: 3%;
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-}
-
-.underline {
-  position: relative;
-}
-.underline:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 3px;
-  bottom: 0;
-  left: 0;
-  background-color: black;
-  visibility: hidden;
-  transition: all 0.4s ease-in-out;
-}
-@media (max-width: 1200px) {
-  .underline:before {
-    height: 2px;
-  }
-}
-@media (max-width: 599px) {
-  .underline:before {
-    height: 1px;
-  }
-}
-.underline:hover:before {
-  visibility: visible;
-  width: 100%;
-}
-
-h3, h4 {
-  text-align: center;
 }
 
 /*# sourceMappingURL=stylepalettegout.css.map */

@@ -15,27 +15,9 @@ body {
     @include body 
 }
 
-// Header
-
-header {
-    @include maintheme;
-    @include header;
+h3, h4, h5 {
+    text-align: center;
 }
-
-// Menu
-
-.menu {
-    @include menulayout ($colormenu1, $colormenutext1, $fontmenu1a)
-}
-
-// Footer
-
-footer {
-    @include maintheme;
-    @include footer;
-}
-
-// Specific to the page
 
 h3{
     width: 80%;
@@ -59,6 +41,32 @@ h5 {
     margin-top: 5%;
 }
 
+// Header
+
+header {
+    @include maintheme;
+    @include header;
+}
+
+// Menu
+
+.menu {
+    @include menulayout ($colormenu1, $colormenutext1, $fontmenu1a)
+}
+
+.underline {
+    @include underline ($colormenutext1);
+}
+
+// Footer
+
+footer {
+    @include maintheme;
+    @include footer;
+}
+
+// Specific to the page
+
 .img--top{
     height: 4em;
     margin-bottom: 3%;
@@ -66,13 +74,8 @@ h5 {
 }
 
 .img--bottom {
-    height: 1em;
-}
-
-.underline {
-    @include underline ($colormenutext1);
-}
-
-h3, h4, h5 {
-    text-align: center;
+    height: 1.5em;
+    margin-right: -10%;
+    margin-left: -10%;
+    margin-bottom: -2%;
 }

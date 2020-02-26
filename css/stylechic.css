@@ -69,6 +69,30 @@ body ul {
   list-style-type: none;
 }
 
+h3, h4 {
+  text-align: center;
+}
+
+h3 {
+  width: 80%;
+  height: 2.5em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #C67412;
+  font-size: 2.5em;
+  background: linear-gradient(to right, #C67412 0%, #A165CB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h4 {
+  font-size: 1.5em;
+  padding-bottom: 3%;
+  display: flex;
+  justify-content: space-between;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 90%;
+}
+
 header {
   background-color: #579c87;
   color: #fcca46;
@@ -126,72 +150,6 @@ header img {
 .menu .menu_wrapper .liste .liste_prix {
   font-weight: bold;
   text-align: right;
-}
-
-footer {
-  background-color: #579c87;
-  color: #fcca46;
-  font-family: "montserratregular";
-  font-size: 2vw;
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
-  width: 100%;
-  height: 8%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-@media (max-width: 599px) {
-  footer {
-    font-size: 3vw;
-  }
-}
-footer .btn_wiggle {
-  margin: 20px;
-  cursor: pointer;
-  animation: wiggle 2s infinite;
-}
-footer .btn_wiggle a {
-  color: #FCCA46;
-  text-decoration: none;
-}
-@keyframes wiggle {
-  0% {
-    transform: rotate(0deg);
-  }
-  6% {
-    transform: rotate(-5deg);
-  }
-  8% {
-    transform: rotate(5deg);
-  }
-  10% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-h3 {
-  width: 80%;
-  height: 2.5em;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #C67412;
-  font-size: 2.5em;
-  background: linear-gradient(to right, #C67412 0%, #A165CB 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-h4 {
-  font-size: 1.5em;
-  padding-bottom: 3%;
-  display: flex;
-  justify-content: space-between;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  width: 90%;
 }
 
 .underline--1 {
@@ -300,8 +258,50 @@ h4 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-h3, h4 {
-  text-align: center;
+footer {
+  background-color: #579c87;
+  color: #fcca46;
+  font-family: "montserratregular";
+  font-size: 2vw;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 599px) {
+  footer {
+    font-size: 3vw;
+  }
+}
+footer .btn_wiggle {
+  margin: 20px;
+  cursor: pointer;
+  animation: wiggle 2s infinite;
+}
+footer .btn_wiggle a {
+  color: #FCCA46;
+  text-decoration: none;
+}
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  6% {
+    transform: rotate(-5deg);
+  }
+  8% {
+    transform: rotate(5deg);
+  }
+  10% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /*# sourceMappingURL=stylechic.css.map */
