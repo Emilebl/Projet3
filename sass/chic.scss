@@ -49,35 +49,31 @@ header {
 // Menu
 
 .menu {
-    @include menulayout ($colormenu2, $colormenutext2, $fontmenu2a)
-}
-
-.underline--1 {
-    @include underline ($colormenutext2);
-    color: $colormenutext2;
-}
-.underline--2 {
-    @include underline ($colormenutext2b);
-    color: $colormenutext2b;
-}
-.underline--3 {
-    @include underline ($colormenutext2c);
-    color: $colormenutext2c;
-}
-
-.liste--1 {
-    color: $colormenutext2;
-}
-
-.liste--2 {
-    color: $colormenutext2b;
-}
-.liste--3 {
-    color: $colormenutext2c;
-}
-
-.liste {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    @include menulayout ($colormenu2, $colormenutext2, $fontmenu2a);
+    .underline--1 {
+        @include underline ($colormenutext2);
+        color: $colormenutext2;
+    }
+    .underline--2 {
+        @include underline ($colormenutext2b);
+        color: $colormenutext2b;
+    }
+    .underline--3 {
+        @include underline ($colormenutext2c);
+        color: $colormenutext2c;
+    }
+    .liste--1 {
+        color: $colormenutext2;
+    }
+    .liste--2 {
+        color: $colormenutext2b;
+    }
+    .liste--3 {
+        color: $colormenutext2c;
+    }
+    .liste {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
 }
 
 // Footer

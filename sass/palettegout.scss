@@ -49,11 +49,10 @@ header {
 // Menu
 
 .menu {
-    @include menulayout ($colormenu4, black, $fontmenu4a)
-}
-
-.underline {
-    @include underline (black);
+    @include menulayout ($colormenu4, black, $fontmenu4a);
+    .underline {
+        @include underline (black);
+    }
 }
 
 // Footer

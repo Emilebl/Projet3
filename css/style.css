@@ -139,8 +139,7 @@ header img {
     height: 250px;
   }
 }
-
-.menutxt {
+.menugrid .menu_wrapper .menutxt {
   width: 80%;
 }
 

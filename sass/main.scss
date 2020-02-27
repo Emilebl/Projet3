@@ -70,12 +70,11 @@ header {
         } 
         @media (max-width: 599px) {
             height: 250px;
-        } 
+        }
+        .menutxt{
+            width: 80%;
+        }         
     }  
-}
-
-.menutxt{
-    width: 80%;
 }
 
 .menu--1{
